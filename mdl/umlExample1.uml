@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/schemas/Standard/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Model xmi:id="_oGdg8NxEEd6kjY8QjsMOyA" name="umlExample1">
+    <packageImport xmi:id="_oGdg8dxEEd6kjY8QjsMOyA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_p6H28NxEEd6kjY8QjsMOyA" name="RTSsim" visibility="package">
+      <packagedElement xmi:type="uml:Class" xmi:id="_yHNNINxEEd6kjY8QjsMOyA" name="TextEdit" isLeaf="true">
+        <ownedComment xmi:id="_4JGYoOAqEd6Vt-8qo5mVdA" annotatedElement="_yHNNINxEEd6kjY8QjsMOyA">
+          <body>extends QTextEdit</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_ekuxEOArEd6Vt-8qo5mVdA" name="generateTasks" type="_45SIcNxFEd6kjY8QjsMOyA" isUnique="false" association="_ekoqcOArEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ek03seArEd6Vt-8qo5mVdA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ek03sOArEd6Vt-8qo5mVdA"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UvxjoNxFEd6kjY8QjsMOyA" name="OpaqueBehavior_0"/>
+        <ownedOperation xmi:id="_SJpwcOArEd6Vt-8qo5mVdA" name="generateTasks"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_45SIcNxFEd6kjY8QjsMOyA" name="Task">
+        <ownedAttribute xmi:id="_ANQFUNxGEd6kjY8QjsMOyA" name="name" visibility="private" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_GN2V0NxGEd6kjY8QjsMOyA" name="iTime" visibility="private" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_J99KYNxGEd6kjY8QjsMOyA" name="cTime" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MWknkNxGEd6kjY8QjsMOyA" name="dTime" visibility="private" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OmZVINxGEd6kjY8QjsMOyA" name="pTime" visibility="private" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_QjmosNxGEd6kjY8QjsMOyA" name="isRunning" visibility="private" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_UBRpcNxGEd6kjY8QjsMOyA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_U9KC4NxGEd6kjY8QjsMOyA" name="isFinished" visibility="private" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_XJW0sNxGEd6kjY8QjsMOyA"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_uRZHQNxGEd6kjY8QjsMOyA" name="constructor" specification="_b9i8cNxGEd6kjY8QjsMOyA">
+          <language>Java</language>
+          <body>this.name=name;&#xD;&#xA;this.iTime=i;&#xD;&#xA;this.cTime=c;&#xD;&#xA;this.dTime=d;&#xD;&#xA;this.pTime=p;</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_b9i8cNxGEd6kjY8QjsMOyA" name="Task" method="_uRZHQNxGEd6kjY8QjsMOyA">
+          <ownedParameter xmi:id="_ew_7gNxGEd6kjY8QjsMOyA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jiIvQdxGEd6kjY8QjsMOyA" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jiIvQNxGEd6kjY8QjsMOyA" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_jiO14NxGEd6kjY8QjsMOyA">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedParameter>
+          <ownedParameter xmi:id="_j23CENxGEd6kjY8QjsMOyA" name="i">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nLjF8NxGEd6kjY8QjsMOyA" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nLc_UNxGEd6kjY8QjsMOyA" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_nLjF8dxGEd6kjY8QjsMOyA">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ngL5MNxGEd6kjY8QjsMOyA" name="p">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pMxW0NxGEd6kjY8QjsMOyA" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pMrQMNxGEd6kjY8QjsMOyA" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_pMxW0dxGEd6kjY8QjsMOyA">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedParameter>
+          <ownedParameter xmi:id="_pYhT0NxGEd6kjY8QjsMOyA" name="c">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rezD0dxGEd6kjY8QjsMOyA" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rezD0NxGEd6kjY8QjsMOyA" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_re5KcNxGEd6kjY8QjsMOyA">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedParameter>
+          <ownedParameter xmi:id="_rujXENxGEd6kjY8QjsMOyA" name="d">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tGI1ENxGEd6kjY8QjsMOyA" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tGCHYNxGEd6kjY8QjsMOyA" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_tGI1EdxGEd6kjY8QjsMOyA">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_CQG4cNxHEd6kjY8QjsMOyA" name="changeRunningState"/>
+        <ownedOperation xmi:id="_JZ3JYNxHEd6kjY8QjsMOyA" name="setFinished" visibility="package"/>
+        <ownedOperation xmi:id="_MCnUUNxHEd6kjY8QjsMOyA" name="getName"/>
+        <ownedOperation xmi:id="_NYYNYNxHEd6kjY8QjsMOyA" name="getItime"/>
+        <ownedOperation xmi:id="_R3p1ENxHEd6kjY8QjsMOyA" name="getCtime"/>
+        <ownedOperation xmi:id="_TQw9ENxHEd6kjY8QjsMOyA" name="getDtime"/>
+        <ownedOperation xmi:id="_UaBEINxHEd6kjY8QjsMOyA" name="getPtime"/>
+        <ownedOperation xmi:id="_dPyK8NxHEd6kjY8QjsMOyA" name="updateTimers"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_URWusOApEd6Vt-8qo5mVdA" name="RTSim" visibility="package">
+        <ownedAttribute xmi:id="_gtfCwOAqEd6Vt-8qo5mVdA" name="usePolicy" type="_hX-msOApEd6Vt-8qo5mVdA" isUnique="false" association="_gtY8IOAqEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kC8isOAqEd6Vt-8qo5mVdA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kC2cEOAqEd6Vt-8qo5mVdA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_xc37wOArEd6Vt-8qo5mVdA" name="generateQ" type="_3IuWMOApEd6Vt-8qo5mVdA" isUnique="false" association="_xcxOEOArEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_012pwOArEd6Vt-8qo5mVdA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_01wjIOArEd6Vt-8qo5mVdA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yQiNUOArEd6Vt-8qo5mVdA" name="generateQplus" type="_4K0FUOApEd6Vt-8qo5mVdA" isUnique="false" association="_yQcGsOArEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3HTvAeArEd6Vt-8qo5mVdA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3HTvAOArEd6Vt-8qo5mVdA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_8dyrgOArEd6Vt-8qo5mVdA" name="getTasks" type="_45SIcNxFEd6kjY8QjsMOyA" isUnique="false" association="_8dsk4OArEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8d-4weArEd6Vt-8qo5mVdA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8d-4wOArEd6Vt-8qo5mVdA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_n2TNoOAsEd6Vt-8qo5mVdA" name="newQgraphics extends QGraphicsView" type="_BjRXkOAsEd6Vt-8qo5mVdA" isUnique="false" association="_n2NHAOAsEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n2fa4eAsEd6Vt-8qo5mVdA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n2fa4OAsEd6Vt-8qo5mVdA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_figS0OApEd6Vt-8qo5mVdA" name="Interface_0"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hX-msOApEd6Vt-8qo5mVdA" name="AbstractPolicy" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lNzowOApEd6Vt-8qo5mVdA" name="RM" clientDependency="_uHrzgOApEd6Vt-8qo5mVdA">
+        <generalization xmi:id="_xbOn4OApEd6Vt-8qo5mVdA" general="_hX-msOApEd6Vt-8qo5mVdA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_llZpYOApEd6Vt-8qo5mVdA" name="DM">
+        <generalization xmi:id="_wATiAOApEd6Vt-8qo5mVdA" general="_hX-msOApEd6Vt-8qo5mVdA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_l2rmoOApEd6Vt-8qo5mVdA" name="EDF">
+        <generalization xmi:id="_wtAP8OApEd6Vt-8qo5mVdA" general="_hX-msOApEd6Vt-8qo5mVdA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_uHrzgOApEd6Vt-8qo5mVdA" name="FromRMtoAbstractPolicy" supplier="_hX-msOApEd6Vt-8qo5mVdA" client="_lNzowOApEd6Vt-8qo5mVdA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3IuWMOApEd6Vt-8qo5mVdA" name="Q"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4K0FUOApEd6Vt-8qo5mVdA" name="QPlus"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_gtY8IOAqEd6Vt-8qo5mVdA" name="A_Scheduler_AbstractPolicy" memberEnd="_gtfCwOAqEd6Vt-8qo5mVdA _gtlJYuAqEd6Vt-8qo5mVdA">
+        <ownedEnd xmi:id="_gtlJYuAqEd6Vt-8qo5mVdA" name="scheduler" type="_URWusOApEd6Vt-8qo5mVdA" isUnique="false" association="_gtY8IOAqEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gtrQAOAqEd6Vt-8qo5mVdA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gtrQAeAqEd6Vt-8qo5mVdA"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ekoqcOArEd6Vt-8qo5mVdA" name="A_TextEdit_Task" memberEnd="_ekuxEOArEd6Vt-8qo5mVdA _ek03suArEd6Vt-8qo5mVdA">
+        <ownedEnd xmi:id="_ek03suArEd6Vt-8qo5mVdA" name="textEdit" type="_yHNNINxEEd6kjY8QjsMOyA" isUnique="false" association="_ekoqcOArEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ek6-UOArEd6Vt-8qo5mVdA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ek6-UeArEd6Vt-8qo5mVdA"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_xcxOEOArEd6Vt-8qo5mVdA" name="A_Scheduler_Q" memberEnd="_xc37wOArEd6Vt-8qo5mVdA _xc-CYuArEd6Vt-8qo5mVdA">
+        <ownedEnd xmi:id="_xc-CYuArEd6Vt-8qo5mVdA" name="scheduler" type="_URWusOApEd6Vt-8qo5mVdA" isUnique="false" association="_xcxOEOArEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xdEJAOArEd6Vt-8qo5mVdA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xdEJAeArEd6Vt-8qo5mVdA"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_yQcGsOArEd6Vt-8qo5mVdA" name="A_Scheduler_QPlus" memberEnd="_yQiNUOArEd6Vt-8qo5mVdA _yQoT8uArEd6Vt-8qo5mVdA">
+        <ownedEnd xmi:id="_yQoT8uArEd6Vt-8qo5mVdA" name="scheduler" type="_URWusOApEd6Vt-8qo5mVdA" isUnique="false" association="_yQcGsOArEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yQuakOArEd6Vt-8qo5mVdA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yQuakeArEd6Vt-8qo5mVdA"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_8dsk4OArEd6Vt-8qo5mVdA" name="A_Scheduler_Task" memberEnd="_8dyrgOArEd6Vt-8qo5mVdA _8d-4wuArEd6Vt-8qo5mVdA">
+        <ownedEnd xmi:id="_8d-4wuArEd6Vt-8qo5mVdA" name="scheduler" type="_URWusOApEd6Vt-8qo5mVdA" isUnique="false" association="_8dsk4OArEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8eE_YOArEd6Vt-8qo5mVdA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8eE_YeArEd6Vt-8qo5mVdA"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BjRXkOAsEd6Vt-8qo5mVdA" name="newQgraphics"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_n2NHAOAsEd6Vt-8qo5mVdA" name="A_Scheduler_newQgraphics extends QGraphicsView" memberEnd="_n2TNoOAsEd6Vt-8qo5mVdA _n2fa4uAsEd6Vt-8qo5mVdA">
+        <ownedEnd xmi:id="_n2fa4uAsEd6Vt-8qo5mVdA" name="scheduler" type="_URWusOApEd6Vt-8qo5mVdA" isUnique="false" association="_n2NHAOAsEd6Vt-8qo5mVdA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n2lhgOAsEd6Vt-8qo5mVdA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n2lhgeAsEd6Vt-8qo5mVdA"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_oGdg8txEEd6kjY8QjsMOyA">
+      <eAnnotations xmi:id="_oGdg89xEEd6kjY8QjsMOyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/schemas/Standard/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_eGBr4NxGEd6kjY8QjsMOyA" base_BehavioralFeature="_b9i8cNxGEd6kjY8QjsMOyA"/>
+</xmi:XMI>
