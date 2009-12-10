@@ -40,7 +40,7 @@ public class Task {
 	 *
 	 */
 	public void changeRunningState() {
-
+		this.isRunning=!isRunning;
 	}
 
 	/**
@@ -48,47 +48,51 @@ public class Task {
 	 *
 	 */
 	void setFinished() {
-
+		this.isFinished=true;
 	}
 
 	/**
 	 * Description of the method getName.
+	 * @return 
 	 *
 	 */
-	public void getName() {
-
+	public String getName() {
+		return this.name;
 	}
 
 	/**
 	 * Description of the method getItime.
+	 * @return 
 	 *
 	 */
-	public void getItime() {
-
+	public Integer getItime() {
+		return this.iTime;
 	}
-
 	/**
 	 * Description of the method getCtime.
+	 * @return 
 	 *
 	 */
-	public void getCtime() {
-
+	public Integer getCtime() {
+		return this.iTime;
 	}
 
 	/**
 	 * Description of the method getDtime.
+	 * @return 
 	 *
 	 */
-	public void getDtime() {
-
+	public Integer getDtime() {
+		return  this.dTime;
 	}
 
 	/**
 	 * Description of the method getPtime.
+	 * @return 
 	 *
 	 */
-	public void getPtime() {
-
+	public Integer getPtime() {
+		return this.pTime;
 	}
 
 	/**

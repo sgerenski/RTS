@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'StartRTSsym.jui'
 **
-** Created: Sa 21. Nov 18:38:13 2009
+** Created: Mo 7. Dez 21:27:29 2009
 **      by: Qt User Interface Compiler version 4.5.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
