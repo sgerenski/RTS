@@ -37,10 +37,10 @@ public class Task {
 
 	/**
 	 * Description of the method changeRunningState.
-	 *
+	 * test Naveen
 	 */
 	public void changeRunningState() {
-		this.isRunning=!isRunning;
+
 	}
 
 	/**
@@ -48,51 +48,47 @@ public class Task {
 	 *
 	 */
 	void setFinished() {
-		this.isFinished=true;
+
 	}
 
 	/**
 	 * Description of the method getName.
-	 * @return 
 	 *
 	 */
-	public String getName() {
-		return this.name;
+	public void getName() {
+
 	}
 
 	/**
 	 * Description of the method getItime.
-	 * @return 
 	 *
 	 */
-	public Integer getItime() {
-		return this.iTime;
+	public void getItime() {
+
 	}
+
 	/**
 	 * Description of the method getCtime.
-	 * @return 
 	 *
 	 */
-	public Integer getCtime() {
-		return this.iTime;
+	public void getCtime() {
+
 	}
 
 	/**
 	 * Description of the method getDtime.
-	 * @return 
 	 *
 	 */
-	public Integer getDtime() {
-		return  this.dTime;
+	public void getDtime() {
+
 	}
 
 	/**
 	 * Description of the method getPtime.
-	 * @return 
-	 *test test test etauzsgdjhgdkj fsdkjgfgf sdf
+	 *
 	 */
-	public Integer getPtime() {
-		return this.pTime;
+	public void getPtime() {
+
 	}
 
 	/**

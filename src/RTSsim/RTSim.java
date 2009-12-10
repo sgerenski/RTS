@@ -15,7 +15,7 @@ class RTSim {
 	public Q generateQ;
 	public QPlus generateQplus;
 	public HashSet<Task> getTasks;
-	public HashSet<newQgraphics> newQgraphics;
+	public HashSet<newQgraphics> newQgraphics extends QGraphicsView;
 
 
 
